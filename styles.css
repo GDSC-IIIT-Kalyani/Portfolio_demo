@@ -42,14 +42,25 @@ body {
   gap: 40px;
 }
 
+.navbar_list, .navbar_content {
+  z-index: 2;
+  position: relative;
+}
+
 .navbar_content li a {
   color: #fff;
   text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 4px;
 }
 
 .navbar_content li a:hover {
-  text-decoration: solid underline;
+  background-color: #2d2b22;
+  color: #ffffff;
 }
+
+
+
 
 .home_page {
   height: 100vh;
