@@ -1,4 +1,4 @@
-<h1 align="center">Build you own portfolio</h1> 
+<h1 align="center">Build your own portfolio</h1> 
 <br>
 
 <div align="center">
