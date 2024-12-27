@@ -9,6 +9,7 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .layout {
@@ -18,6 +19,9 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     margin: auto;
+}
+.ham-container{
+    display: block;
 }
 
 .navbar {
@@ -63,6 +67,7 @@ body {
 .right_container{
     margin-right: -10vw;
     max-width: fit-content;
+    margin-top: -5%;
 }
 
 .main_content {
@@ -126,9 +131,14 @@ body {
     z-index: -1;
 }
 
-.about_me_contents span {
-    font-size: 1rem;
+.about_me_contents{
+    font-size: 2rem;
     font-weight: 500;
+}
+
+.about_me_contents span {
+    font-size: 1.5rem;
+    font-weight: 300;
     display: block;
     margin-top: 10px;
 }
@@ -186,6 +196,10 @@ body {
     overflow: hidden;
     max-width: 100%;
 }
+.right_container{
+    display: flex;
+}
+
 
 /* Media Queries for Responsiveness */
 
@@ -194,6 +208,9 @@ body {
     .layout {
         width: 100%;
         flex-direction: column;
+    }
+    #navitems{
+        display: none;
     }
     .about_page{
         display: flex;
@@ -246,11 +263,20 @@ body {
     .about_me_contents {
         margin: 10px 0;
     }
+    .about_heading{
+        margin-bottom: 8%;
+    }
+    .ham-container{
+        margin-right: 5%;
+    }
 }
 @media (min-width: 480px) and (max-width: 580px) {
     .layout {
         width: 100%;
         flex-direction: column;
+    }
+    .ham-container{
+        margin-right: 5%;
     }
     .about_page{
         display: flex;
@@ -299,6 +325,9 @@ body {
     .about_me_contents {
         margin: 10px 0;
     }
+    #navitems{
+        display: none;
+    }
 }
 @media (min-width: 580px) and (max-width: 900px) {
     .layout {
@@ -343,9 +372,21 @@ body {
         font-size: 100px;
         left: -40%;
     }
-
+    .right_container{
+        margin-top: 10%;
+    }
+    .description{
+        margin-left: 3%;
+        width: fit-content;
+    }
     .about_me_contents {
         margin: 10px 0;
+    }
+    #navitems{
+        display: none;
+    }
+    .ham-container{
+        margin-right: 5%;
     }
 }
 
@@ -376,6 +417,9 @@ body {
     .portfolio_container{
         margin-right: -10%;
     }
+    .hamburger{
+        display: none;
+    }
 }
 
 /* Laptops */
@@ -399,6 +443,9 @@ body {
     .right_container{
         margin-right: -10%;
     }
+    .hamburger{
+        display: none;
+    }
 }
 @media (min-width: 1176px){
     .layout {
@@ -409,15 +456,18 @@ body {
         font-size: 3rem;
     }
     .about_heading{
-        margin-left: -3%;
+        margin-left: -2%;
     }
     .portfolio_heading{
-        margin-left: -10%;
+        margin-left: -2%;
     }
     .portfolio_container{
         margin-right: -20%;
     }
     .right_container{
         margin-right: -10%;
+    }
+    .hamburger{
+        display: none;
     }
 }

@@ -74,30 +74,30 @@
                             <!-- Edit here 👇 Add your location -->
                             <span>Kalyani, West Bengal</span>
                         </div>
+                        <br/>
                         <div class="about_me_contents">
                             CONNECT WITH ME
-                            <div></div>
                         </div>
                     </div>
                     <div class="skills">
                         <div class="experiences">
                             <div class="info">
-                                EDUCATION BACKGROUND
+                                EDUCATION BACKGROUND<br/>
                                 <!-- Edit here 👇 Add your Educational Background -->
                                 <span>BTech</span>
                             </div>
                             <div class="info">
-                                ACADEMIC ACHIEVEMENTS
+                                ACADEMIC ACHIEVEMENTS<br/>
                                 <!-- Edit here 👇 Add your Acad Achievements -->
                                 <span>5</span>
                             </div>
                             <div class="info">
-                                EXPERIENCE
+                                EXPERIENCE<br/>
                                 <!-- Edit here 👇 Add your Experience -->
                                 <span>2</span>
                             </div>
                             <div class="info">
-                                PROJECTS
+                                PROJECTS<br/>
                                 <!-- Edit here 👇 Add your Projects -->
                                 <span>3</span>
                             </div>
@@ -123,16 +123,16 @@
                         
                     </div> -->
                     <!-- Edit here 👇 Add your own photo here. Simply download it in the assets folder and update the filename "pfp.png" to match your image's filename -->
-                    <img src="./assets/robotics.png" class="bento__item" style="--columns: span 2; object-fit: cover; width: 20rem;">
+                    <img src="./assets/robotics.png" class="bento__item" style="--columns: span 2; object-fit: cover; width: 20rem; height: 14rem;">
                     <!-- Edit here 👇 Add your own photo here. Simply download it in the assets folder and update the filename "pfp.png" to match your image's filename -->
-                    <img src="./assets/team.jpeg" class="bento__item" style="--rows: span 4; --columns: 1 / -1; object-fit: cover;">
+                    <img src="./assets/team.jpeg" class="bento__item" style="--rows: span 4; --columns: 1 / -1; object-fit: cover; width: 20rem; height: 14rem;">
                     
                     <!-- Edit here 👇 Add your own photo here. Simply download it in the assets folder and update the filename "pfp.png" to match your image's filename -->
-                    <img src="./assets/rebase.png" class="bento__item" style="object-fit: cover">
+                    <img src="./assets/rebase.png" class="bento__item" style="object-fit: cover; width: 20rem; height: 14rem;">
                     <!-- Edit here 👇 Add your own photo here. Simply download it in the assets folder and update the filename "pfp.png" to match your image's filename -->
-                    <img src="./assets/git.png" class="bento__item" style="--columns: span 2; object-fit: cover; height: 14rem;">
+                    <img src="./assets/git.png" class="bento__item" style="--columns: span 2; object-fit: cover; height: 14rem; width: 20rem;">
                     <!-- Edit here 👇 Add your own photo here. Simply download it in the assets folder and update the filename "pfp.png" to match your image's filename -->
-                    <img class="bento__item" src="./assets/rebase2.png">
+                    <img class="bento__item" src="./assets/rebase2.png" style="width: 20rem; height: 14rem;">
                 </div>
             </div>
         </div>
@@ -142,14 +142,28 @@
             <div class="logo">
                 <img src="./assets/logo.png">
             </div>
-            <ul class="navbar_list">
-                <li class="navbar_content"><a href="#Home">HOME</a></li>
-                <li class="navbar_content"><a href="#About">ABOUT</a></li>
-                <li class="navbar_content"><a href="#Portfolio">PORTFOLIO</a></li>
-            </ul>
+            <div class="ham-container">
+                <img src="./assets/hamburger.png" alt="hamburger" class="hamburger" style="width: 40px; height: 40px;" onclick="navbar_control()">
+                <ul class="navbar_list" id="navitems">
+                    <li class="navbar_content"><a href="#Home">HOME</a></li>
+                    <li class="navbar_content"><a href="#About">ABOUT</a></li>
+                    <li class="navbar_content"><a href="#Portfolio">PORTFOLIO</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
+<script>
+    function navbar_control() {
+    var element = document.getElementById("navitems");
+    if (element.style.display === 'none' || element.style.display === '') {
+        element.style.display = 'block';
+    } else {
+        element.style.display = 'none';
+    }
+}
+
+</script>
 <!-- This is where the content of the webpage ends. -->
 </html>
 <!-- This marks the end of the HTML document. -->
